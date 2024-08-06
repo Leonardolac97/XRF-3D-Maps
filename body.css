@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header {
+    width: 220px;
+    background-color: #333;
+    color: #fff;
+    height: 100vh;
+    position: fixed;
+    overflow-y: auto; /* Add scrollbar to menu */
+}
+
+nav ul.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul.menu li {
+    display: block;
+    margin: 20px 0;
+}
+
+nav ul.menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 20px;
+}
+
+nav ul.menu li a:hover {
+    background-color: #444;
+}
+
+nav ul.menu ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+nav ul.menu li.category {
+    font-size: 22px;  /* Increase font size for categories */
+    font-weight: bold;
+}
+
+nav ul.menu li.subcategory {
+    font-size: 20px;  /* Increase font size for subcategories */
+}
+
+nav ul.menu hr {
+    border: 1px solid #444;  /* Styling the horizontal rule */
+    margin: 10px 0;  /* Adding some margin to separate sections */
+}
+
+main {
+    margin-left: 240px; /* Space for the vertical menu */
+    padding: 20px;
+    flex-grow: 1;
+}
